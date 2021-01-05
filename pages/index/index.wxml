@@ -12,15 +12,18 @@
     <loading wx:if="{{showLoading}}">加载中</loading>
 </view>
  <!-- 页面 -->
- <swiper class="content" style="min-height:2000000rpx;overflow:auto;" duration="1000" current="{{currentTab}}" bindchange="changeContent">
+ <swiper class="content" style="min-height:2000000rpx;overflow:auto;margin-top: 100rpx;" duration="1000" current="{{currentTab}}" bindchange="changeContent">
  <swiper-item class="content-item" wx:for="{{arr}}" wx:key="index">
     <view class="box" wx:for="{{arr}}" wx:for-item="item" wx:key="index">
       <view class="pic">
-        <image mode='aspectFit' style="width:500rpx;height:140rpx;" src="{{item.goodsThumbnailUrl}}"></image>
+        <image mode='aspectFit' style="width:540rpx;height:140rpx;" src="{{item.goodsThumbnailUrl}}"></image>
       </view>
       <view class="title">
         <view class="name">{{item.goodsDesc}}</view>
-        <view class="button">领取优惠券</view>
+        <view class="info">
+          <view class="num">已售：{{item.salesTip}}</view>
+          <view class="button">领取优惠券</view>
+        </view>
       </view>
     </view>
  </swiper-item>

@@ -36,18 +36,19 @@ page {
    border-right: none;
  }
  .active{
-  color: #ff502c
+  color: #ec780b;
  }
  .box{
     position:relative;
     overflow: hidden;
-    padding-top: 100rpx;
     box-sizing: border-box;
     text-align: center;
     font-size: 14px;
     margin: 30rpx 16rpx;
     border: 1rpx solid #fff;
     border-radius: 8%;
+    padding: 20rpx 0;
+    background-color: #fff;
  }
  .pic{
    float: left;
@@ -55,29 +56,43 @@ page {
  }
  .title{
    float: left;
-   width: 50%;
+   width: 68%;
    font-size: 28rpx;
    position: relative;
    overflow: hidden;
  }
+ .pic{
+   display:flex;   
+   justify-content: center; 
+ }
  .name{
-   float: left;
+  float: left;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+ }
+ .info{
+   float: right;
+   margin-top: 20rpx;
+ }
+ .num,.button{
+   display: inline-block;
+ }
+ .num{
+   width:200rpx;
+   text-align: left;
  }
  .button{
-   float: right;
-   width: 280rpx;
-   height: 60rpx;
-   line-height: 60rpx;
-   border: 1px solid #ccc;
-   border-radius: 20rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border: 1px solid rgb(238, 171, 28);
+    border-radius: 20rpx;
+    width: 220rpx;
+    margin-left: 60rpx;
+    color: #ec780b;
  }
-.pic{
-  display:flex;   
-  justify-content: center; 
-}
-.image{
-  width: 500rpx;
-}
 .loading {
     text-align: center;
 }
