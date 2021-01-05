@@ -148,7 +148,19 @@ Page({
           }
       })
   },
-
+  
+  getDiscountCoup: function(e){
+    wx.navigateToMiniProgram({
+      appId: e.currentTarget.dataset.appid,
+      path: e.currentTarget.dataset.pagePath,
+      extraData: {
+      },
+      envVersion: 'release',
+      success(res) {
+        // 打开成功
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

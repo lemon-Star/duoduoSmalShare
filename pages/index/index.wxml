@@ -22,7 +22,7 @@
         <view class="name">{{item.goodsDesc}}</view>
         <view class="info">
           <view class="num">已售：{{item.salesTip}}</view>
-          <view class="button">领取优惠券</view>
+          <view class="button" bindtap="getDiscountCoup" data-appid="{{item.appId}}" data-page-path="{{item.pagePath}}" >领取优惠券</view>
         </view>
       </view>
     </view>
